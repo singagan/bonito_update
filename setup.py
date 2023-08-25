@@ -27,9 +27,9 @@ with open('README.md', encoding='utf-8') as f:
 setup(
     name=package_name,
     version=__version__,
-    packages=find_packages(),
-    include_package_data=True,
-    install_requires=requirements,
+    # packages=find_packages(),
+    # include_package_data=True,
+    # install_requires=requirements,
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Oxford Nanopore Technologies, Ltd',
@@ -40,7 +40,7 @@ setup(
             '{0} = {0}:main'.format(__pkg_name__)
         ]
     },
-    dependency_links=[
-        'https://download.pytorch.org/whl/cu113',
-    ]
+    # dependency_links=[
+    #     'https://download.pytorch.org/whl/cu113',
+    # ]
 )
